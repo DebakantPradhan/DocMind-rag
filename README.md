@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DocMind RAG
+
+A Retrieval-Augmented Generation (RAG) system built with Next.js that intelligently chunks and embeds markdown documentation, enabling semantic search and context-aware answers powered by Google's Gemini API.
+
+## Project Overview
+
+**DocMind RAG** is a document intelligence platform that:
+
+- 🔍 **Recursively chunks** markdown files with intelligent text splitting (1000-char chunks, 200-char overlap)
+- 🧠 **Generates embeddings** using Google Gemini's embedding model (1536 dimensions)
+- 💾 **Stores vectors** in AstraDB for semantic similarity search
+- 📝 **Tracks changes** with file hashing and sync manifests
+- 🤖 **Powers RAG queries** via the `/api/chat` endpoint
+
+## Key Components
+
+### Backend Methods & Features
+
+#### Document Processing (`scripts/loadDb.ts`)
+
+- **`loadDb.ts`** — Main orchestration script for document synchronization
+- **`RecursiveCharacterTextSplitter`** — Intelligently splits text at logical boundaries
+- **`createEmbedding(text)`** — Converts text chunks to 1536-dimensional vectors using Gemini
+- **`storeDocument(text, sourceFile, collection)`** — Stores embeddings with metadata in AstraDB
+- **`processFile(filePath, relPath, manifest, collection, stats)`** — Handles file processing with rename/delete detection
+- **Smart caching** — Uses content hashing to detect renamed/moved files without re-embedding
+
+#### Sync & Change Detection (`scripts/syncManifest.ts`)
+
+- **`getSyncManifest()`** — Loads the document sync state
+- **`hashFileContent(content)`** — Creates unique file fingerprints
+- **`updateManifestEntry()`** — Updates tracking for processed files
+- **`findDeletedFiles()`** — Detects removed documentation
+- **`markAsDeleted()`** — Marks documents as deleted in database
+
+#### Chat API (`app/api/chat/route.ts`)
+
+- RESTful endpoint for RAG queries
+- Accepts user questions and returns context-aware responses
+- Uses stored embeddings for semantic retrieval
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+ASTRA_DB_API_ENDPOINT=your_astra_endpoint
+ASTRA_DB_APPLICATION_TOKEN=your_astra_token
+ASTRA_DB_NAMESPACE=your_namespace
+ASTRA_DB_COLLECTION=documents
+GEMINI_API_KEY=your_gemini_key
+DOCS_DIR=./path/to/docs
+```
 
-## Learn More
+## Testing RAG Functionality
 
-To learn more about Next.js, take a look at the following resources:
+To verify DocMind RAG is working correctly, ask the LLM about these **DocMind-specific** features:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **"Can DocMind detect when a markdown file is renamed?"**
+- **"How does DocMind chunk large documents?"**
+- **"What embedding dimension does DocMind use?"**
+- **"How does DocMind handle file deletion?"**
+- **"Explain DocMind's sync manifest tracking system"**
+- **"What's the overlap strategy in DocMind's text splitting?"**
+- **"How does DocMind store vector embeddings?"**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+These questions test whether the RAG system has properly indexed your documentation about DocMind's methods and architecture.

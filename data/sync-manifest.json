@@ -1,0 +1,129 @@
+{
+  "f67ae8ca804c5e1f10e1a04f05d1db09db3f31c528413c527e12bb25899bef4d": {
+    "contentHash": "f67ae8ca804c5e1f10e1a04f05d1db09db3f31c528413c527e12bb25899bef4d",
+    "lastKnownPaths": [
+      {
+        "path": "DocMind-RAG-Project-Documentation.md",
+        "lastSeen": "2026-05-02T08:34:24.034Z"
+      }
+    ],
+    "documentIds": [
+      "ee3888f0-6ba7-4355-b888-f06ba76355d5",
+      "445b3c73-dc14-447b-9b3c-73dc14547ba5",
+      "af6ecaa5-d1c1-4fdf-aeca-a5d1c1ffdfa4",
+      "3d4f4358-9087-40ab-8f43-589087e0abc9",
+      "a0acbbf0-54e2-4854-acbb-f054e2b854fd",
+      "06d4bc62-54e2-4d7b-94bc-6254e23d7b80",
+      "006ce317-9a22-4baa-ace3-179a223baaa7",
+      "f81a1daf-5d77-44d9-9a1d-af5d77e4d9ac",
+      "bb21e11b-c8b9-4c87-a1e1-1bc8b96c8752",
+      "4c74e5d8-16a6-45c2-b4e5-d816a675c2c5",
+      "1b52593b-fbff-4e90-9259-3bfbff1e90af",
+      "f2e3528f-96dd-4a2d-a352-8f96dd6a2d9f",
+      "63570ab8-c253-4632-970a-b8c253b632c3",
+      "96e99fb2-06ce-47c7-a99f-b206cea7c7a8",
+      "ca491280-e066-48e7-8912-80e06618e7ed",
+      "73635649-1b4a-492b-a356-491b4a892bcd",
+      "102f53a3-f25d-4a4d-af53-a3f25dba4da4",
+      "11a1c192-a5b8-4e74-a1c1-92a5b8ae7496",
+      "be04f754-ada3-4683-84f7-54ada39683be",
+      "22d7b119-3be2-4e56-97b1-193be22e561b",
+      "84409841-ec8f-4115-8098-41ec8f01158c",
+      "fe064a42-1fd0-410c-864a-421fd0510cb8",
+      "73b12ee6-12af-450c-b12e-e612afb50c78",
+      "85dd0f79-56d6-4617-9d0f-7956d636178e",
+      "33244f14-596a-4a86-a44f-14596a8a8620",
+      "a308ec28-ae7c-416f-88ec-28ae7c316ffc",
+      "c637c0db-af72-422f-b7c0-dbaf72e22fbf",
+      "7a49fb49-dccd-4645-89fb-49dccdf6454f",
+      "e40c6e07-060d-4c9c-8c6e-07060ddc9ce2"
+    ],
+    "isDeleted": false
+  },
+  "7a534f5ef39cb81d6117498f4fb584d02e34286ab32a4c9fc6dea4950e816fd9": {
+    "contentHash": "7a534f5ef39cb81d6117498f4fb584d02e34286ab32a4c9fc6dea4950e816fd9",
+    "lastKnownPaths": [
+      {
+        "path": "Implementation-Decisions.md",
+        "lastSeen": "2026-05-02T08:34:41.606Z"
+      }
+    ],
+    "documentIds": [
+      "7823e592-6dde-46fe-a3e5-926ddeb6fe21",
+      "39ba70a9-c1b1-454b-ba70-a9c1b1154b15",
+      "438e883f-6cd3-4710-8e88-3f6cd34710a2",
+      "2e51afe3-7bc6-429f-91af-e37bc6229f27",
+      "1f2236bb-f6cd-4b73-a236-bbf6cd5b732d",
+      "51d09867-6bee-4252-9098-676bee1252a5",
+      "f50bd69f-382b-4b9b-8bd6-9f382b6b9b32",
+      "73e04bc1-636d-4c59-a04b-c1636dcc595d",
+      "00a65ab6-760f-4aed-a65a-b6760f9aed37",
+      "82883501-b05c-445c-8835-01b05c045c5e",
+      "3881f6ef-df5c-44f7-81f6-efdf5cf4f7a7"
+    ],
+    "isDeleted": false
+  },
+  "aea8b2ba4312142a490983ba72306a9b9b200cd021903f341c1a4de7d7766790": {
+    "contentHash": "aea8b2ba4312142a490983ba72306a9b9b200cd021903f341c1a4de7d7766790",
+    "lastKnownPaths": [
+      {
+        "path": "LLM-Knowledge-Boundaries.md",
+        "lastSeen": "2026-05-02T08:35:00.446Z"
+      }
+    ],
+    "documentIds": [
+      "deaee16c-43e8-4f3f-aee1-6c43e80f3f92",
+      "c68a965b-ed90-472d-8a96-5bed90572d88",
+      "dca05ac2-6867-44be-a05a-c26867a4be34",
+      "6cb5f4a3-b387-4687-b5f4-a3b38706876d",
+      "28314601-531c-467b-b146-01531ca67b51",
+      "edffd685-6338-4371-bfd6-85633853715a",
+      "4024cb87-6185-453e-a4cb-876185c53ed8",
+      "8b473322-912e-4944-8733-22912e9944eb",
+      "f537e19a-064e-437f-b7e1-9a064e137f67",
+      "ca9eae02-664a-4ead-9eae-02664aaeada4",
+      "bee872fd-16db-4dc1-a872-fd16dbfdc1b0"
+    ],
+    "isDeleted": false
+  },
+  "e2313556d685d127ff7290de0b4770cfd5d5ad1d9a7fdf5264d65879bd7b18a6": {
+    "contentHash": "e2313556d685d127ff7290de0b4770cfd5d5ad1d9a7fdf5264d65879bd7b18a6",
+    "lastKnownPaths": [
+      {
+        "path": "RAG-Architecture-Learnings.md",
+        "lastSeen": "2026-05-02T08:35:11.814Z"
+      }
+    ],
+    "documentIds": [
+      "8e83710c-6d41-4e36-8371-0c6d411e363e",
+      "ebeac839-9b21-4f29-aac8-399b215f2953",
+      "a34bfb1a-74ad-4ac0-8bfb-1a74adbac030",
+      "f270c698-814a-4bd3-b0c6-98814aebd375",
+      "e0018811-ad99-4c38-8188-11ad992c3841",
+      "91933de5-c7f0-4630-933d-e5c7f0b630b8",
+      "a141384a-f9c2-4f2e-8138-4af9c22f2e48"
+    ],
+    "isDeleted": false
+  },
+  "098fadf4aa8e9f625c4ad76bf178860327e85bc92107c7014a829ecec3275c55": {
+    "contentHash": "098fadf4aa8e9f625c4ad76bf178860327e85bc92107c7014a829ecec3275c55",
+    "lastKnownPaths": [
+      {
+        "path": "Real-Time-Data-Problem.md",
+        "lastSeen": "2026-05-02T08:35:26.048Z"
+      }
+    ],
+    "documentIds": [
+      "d495bdcd-833c-487f-95bd-cd833c487f5e",
+      "00cc6ebd-1895-4916-8c6e-bd18955916c4",
+      "d5fd10ba-cccb-4238-bd10-bacccb12388e",
+      "52fc0a26-79e2-4ebe-bc0a-2679e2febe42",
+      "756fd92f-c959-4475-afd9-2fc95994757d",
+      "32ff7dff-0e1c-4e27-bf7d-ff0e1cce2753",
+      "1d23ee40-0b0b-4fa4-a3ee-400b0b0fa45e",
+      "300940f7-bdc0-4ae0-8940-f7bdc0eae0c5",
+      "d256639c-3681-4036-9663-9c3681303609"
+    ],
+    "isDeleted": false
+  }
+}
