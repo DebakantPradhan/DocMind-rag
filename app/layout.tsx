@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
-
+import './globals.css';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "DocMind - your personal AI assistant for all your document vaults",
   description: "DocMind is an AI assistant that helps you manage and interact with your document vaults. It provides intelligent search, organization, and retrieval of your documents, making it easier to find and use the information you need.",
 };
+
 
 export default function RootLayout({
   children,
